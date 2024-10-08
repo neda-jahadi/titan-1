@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CardComponent from "./components/CardComponent";
+import CardComponent from "./components/ProductCard/ProductCard";
 
 export default function Home() {
   return (

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 
-const AddToCardComponent = () => {
+const AddToCard = () => {
   return (
     <div>
         <button onClick={() => console.log('clicked')}>Add to card</button>
@@ -9,4 +9,4 @@ const AddToCardComponent = () => {
   )
 }
 
-export default AddToCardComponent
+export default AddToCard
