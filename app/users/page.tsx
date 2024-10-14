@@ -2,6 +2,7 @@ import React from 'react';
 interface User {
     id: number;
     name: string;
+    email: string
 }
 const UsersPage = async () => {
     const res = await fetch (
@@ -13,8 +14,24 @@ const UsersPage = async () => {
   return (
     <div>
         <h1>Users</h1>
-        <ul>{users.map(user => <li key={user.id}>{user.name}</li> )}</ul>
-        
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+            {users.map(user => <table key={user.id}>
+              <tr>
+                <th>
+                  {user.name}
+                </th>
+                <th>
+                  {user.email}
+                </th>
+              </tr>
+              </table> )}
+        </table>
     </div>
   )
 }
