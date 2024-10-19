@@ -14,23 +14,21 @@ const UsersPage = async () => {
   return (
     <div>
         <h1>Users</h1>
-        <table>
+        <table className='table'>
           <thead>
             <tr>
               <th>Name</th>
               <th>Email</th>
             </tr>
           </thead>
-            {users.map(user => <table key={user.id}>
-              <tr>
-                <th>
-                  {user.name}
-                </th>
-                <th>
-                  {user.email}
-                </th>
+          <tbody>
+            {users.map(user => 
+              <tr key={user.id}>
+                <td>{user.name}</td>
+                <td>{user.email}</td>
               </tr>
-              </table> )}
+             )}
+          </tbody>
         </table>
     </div>
   )
