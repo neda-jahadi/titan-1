@@ -1,11 +1,15 @@
 import React from 'react'
 interface Props {
-    params : {slug: string[]}
+    params : {slug: string[]};
+    searchParams : { sortOrder : string}
 }
 
 const ProductPage = (props: Props) => {
   return (
-    <div>ProductPage {props.params.slug} </div>
+    <div>
+       <p>ProductPage is: {props.params.slug}</p> 
+       <p> Order is : {props.searchParams.sortOrder }</p> 
+    </div>
   )
 }
 
