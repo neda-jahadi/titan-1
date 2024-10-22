@@ -1,4 +1,3 @@
-import React, { Suspense } from 'react';
 import UserTable from './UserTable';
 import Link from 'next/link';
 interface Props {
